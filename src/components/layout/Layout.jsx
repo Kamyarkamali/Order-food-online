@@ -8,7 +8,7 @@ function Layout({children}) {
         <Header/>
 
 
-        <div className='h-[1000px]'>{children}</div>
+        <div className='h-fit'>{children}</div>
         
         <Footer/>
 
