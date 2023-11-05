@@ -13,13 +13,13 @@ function Card() {
     
 
   return (
-    <div>
-      <div className="flex items-center justify-center gap-4">
+    <div className="flex flex-col items-center max-w-[1200px] mx-auto">
+      <div className="flex flex-col lg:flex-row items-center">
         <Search foods={foods} setFoods={setFoods}/>
         <Selected foods={foods} setFoods={setFoods}/>
       </div>
         <h1 className="text-center mt-5 text-xl">لیست غذاها</h1>
-        <div className="md:flex grid grid-cols-2 flex-wrap justify-between gap-3 mt-5">
+        <div className="md:flex max-w-[1400px] mx-auto grid grid-cols-2 flex-wrap justify-between gap-3 mt-5">
         {state2.isLoading ?<h1>Loading...</h1> : null}
         {foods.map((item)=>(
           <Cards key={item.id} data={item}/>

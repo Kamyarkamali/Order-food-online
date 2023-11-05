@@ -31,7 +31,7 @@ export default function SimpleSlider() {
         <h1 className="text-center text-2xl mb-4 text-gray-500">شما پسندیده اید</h1>
     <Slider {...settings}>
        {images.map((item)=>(
-           <Link to={"/foods"}>
+           <Link to={"/foods"} key={item.id}>
         <img src={item.image} className="rounded-lg relative lg:h-[600px]" alt="/"/>
         </Link>
         ))}

@@ -20,8 +20,8 @@ function Selected({foods,setFoods}) {
   }
 
   return (
-    <div>
-        <select onChange={changeHandeler} value={roule} className='border-[2px] p-1 mt-3 rounded-md bg-blue-600 text-white text-md '>
+    <div className='max-w-[1400px] mx-auto'>
+        <select onChange={changeHandeler} value={roule} className='border-[2px] p-1 mt-3 rounded-md bg-blue-600 text-white text-md w-[90px]'>
             <option value="ساندویچ">ساندویچ</option>
             <option value="پیتزا خانواده">پیتزا خانواده</option>
             <option value="پیتزا مینی">پیتزا مینی</option>

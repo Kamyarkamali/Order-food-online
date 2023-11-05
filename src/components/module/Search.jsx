@@ -23,7 +23,7 @@ function Search({foods,setFoods}) {
   }
 
   return (
-    <div className="mt-4 flex items-center gap-2 justify-center">
+    <div className="mt-4 max-w-[1200px] gap-2 mx-auto mr-8 flex items-center justify-center">
         <button onClick={searchHandeler} className="bg-blue-500 p-2 rounded-md"><AiOutlineSearch size={17} color="white"/></button>
         <input value={search} onChange={(e)=>setSearch(e.target.value)} type="text" className="border-[1px] rounded-md outline-none lg:w-[400px] p-1 text-gray-500 border-blue-500 placeholder:text-right" placeholder="دنبال چه غذایی هستی؟"/>
 
